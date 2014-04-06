@@ -109,3 +109,11 @@ button:active {
   width:100%;
 }
 
+.no-plugin {
+  display: block;
+}
+
+.plugin {
+  display:none;
+}
+

@@ -1,5 +1,6 @@
 window.onTunnelLoad = function() {
   document.getElementsByClassName("no-plugin")[0].style.display = 'none';
+  document.getElementsByClassName("plugin")[0].style.display = 'block';
 
   var wp_input = document.getElementById('wp-input')
     , wp_button = document.getElementById('wp-send')
