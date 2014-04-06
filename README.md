@@ -1,14 +1,14 @@
 # Tunnel
 
-Tunnel is a micro library for Chrome extension to provide two-way communications between a webpage's context and a chrome extension context.
+Tunnel is a micro-framework for Chrome extensions to provide two-way communications between a webpage's context and a chrome extension context.
 
-## Why?
+## Background
 
 So Chrome extensions are an interesting beast. At any given point you have to deal with three different javascript contexts, background/event script, content script, and web page context. Chrome gives you nice control over the first two, but the web page context is a little temperamental. Even though the web page context and the content script context share the DOM, they do not share global variables. There are a lot of good reasons for this. That being said, if you need to interact with the javascript context on a given page, it becomes impossible to have synchronized communication. That's the problem that Tunnel solves.
 
-## But seriously, why is this useful?
+## Why is this useful?
 
-Okay so lets say you're writing a Chrome extension that modifies the DOM on a dynamic single page app where the layout is controlled by javascript - a backbone app. Injecting HTML into the DOM from your content script is going to be tempermental since your changes can be overwritten by the backbone app at any point. Tunnel would allow you to inject a notifier into the web page context and trigger a callback in the content script context on a backbone render event.
+Okay so lets say you're writing a Chrome extension that modifies the DOM on a dynamic single page app where the layout is controlled by javascript - a backbone app. Injecting HTML into the DOM from your content script is going to be problematic since your changes can be overwritten by the backbone app at any point. Tunnel would allow you to inject a notifier into the web page context and trigger a callback in the content script context on a backbone render event.
 
 ## Usage
 

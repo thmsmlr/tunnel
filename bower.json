@@ -1,0 +1,24 @@
+{
+  "name": "tunnel",
+  "main": "tunnel.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/thmsmlr/tunnel",
+  "authors": [
+    "thmsmlr <millar.thomas@gmail.com>"
+  ],
+  "description": "A two-way communication framework between content scripts and web page scripts for Chrome extensions",
+  "keywords": [
+    "Chrome",
+    "Extension",
+    "Injecting",
+    "Message",
+    "Messaging",
+    "Content Scripts"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "demo.js",
+    "manifest.json"
+  ]
+}
