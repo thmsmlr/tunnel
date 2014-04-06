@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tunnel</title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+  <a href="https://github.com/thmsmlr/tunnel"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+  <header>
+    <div class="wrapper center">
+      <h1 class="title">Tunnel</h1>
+      <p class="subtitle">
+        Chrome Extensions <--> Web Pages
+      </p>
+    </div>
+  </header>
+  <section>
+    <div class="wrapper">
+      <h1>What is Tunnel?</h1>
+      <p>
+      Chrome extensions are an interesting beast. They're awesome because.. well.. they let you inject your code into other people's code! So obviously there are a lot of security concerns here. That's why when your injected code runs, it cannot modify the globals of the page. The only thing it shares is the DOM. This isn't that big of a deal. But as pages are becoming more dynamic, we're losing the ability to make assumptions about the state of the DOM.
+      </p>
+      <p>
+      To fix this, Tunnel provides a messaging system that allows the page and the Chrome extension to have two way communication. This means you can inject code into the runtime that'll notify the extension when a certain event occurs. Effictively bringing back synchronized access to the DOM.
+      </p>
+      <br />
+      <h1>Demo</h1>
+      <div class="plugin">
+        <div class="col-1-2">
+          <h2>Web Page Script</h2>
+          <label for"wp-input">Message for content script</label>
+          <input type="text" id="wp-input" value="" placeholder="Hello from webpage.js!"/>
+          <button id="wp-send">Send</button>
+          <label for"wp-console">Web Page Console</label>
+          <div id="wp-console" class="console">
+          </div>
+        </div>
+        <div class="col-1-2">
+          <h2>Content Script</h2>
+          <label for"cs-input">Message for web page script</label>
+          <input type="text" id="cs-input" value="" placeholder="Hello from content-script.js!"/>
+          <button id="cs-send">Send</button>
+          <label for"cs-console">Content Script console</label>
+          <div id="cs-console" class="console">
+          </div>
+        </div>
+      </div>
+      <div class="no-plugin">
+        <p>Uhoh, looks like you don't have the demo Chrome extension installed! Head on over to the <a href="#">Chrome Web Store</a> to install it.</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="wrapper center">
+      <p>Created by: <a href="http://thmsmlr.com">thmsmlr</a> | HackNY 2014</p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="main.js"></script>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

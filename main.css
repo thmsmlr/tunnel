@@ -1,0 +1,111 @@
+body {
+  /* background: url("bg.png"); */
+  background: #f0f0f0;
+  font-family: Helvetica;
+  margin:0;
+  padding:0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+  /* color:white; */
+  /* text-shadow: 2px 2px rgba(0,0,0, 0.5); */
+  padding: 25px;
+}
+
+section {
+  background:white;
+  padding: 35px 0;
+  overflow:hidden;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  padding: 25px 0;
+}
+
+footer p {
+  font-size:13px;
+  margin:0;
+}
+
+a {
+  font-weight: bold;
+  color: inherit;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+p, h1, h2, h3 {
+  margin: 0 0 0.5em 0;
+}
+
+h1.title {
+  font-size: 42px;
+  margin-bottom: 5px;
+  margin-top:0;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+.center {
+  text-align:center;
+}
+
+.col-1-2 {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+}
+.col-1-2:first-child {
+  padding-right: 40px;
+}
+.col-1-2:last-child {
+  padding-left: 40px;
+}
+
+label {
+  color: #555;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  text-transform: uppercase;
+}
+input[type=text] {
+  width: 220px;
+}
+input[type=text], button {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding: 7px 10px;
+}
+button {
+  outline:none;
+  background: #f5f5f5;
+  padding: 7px 20px;
+}
+button:active {
+  background: #ddd;
+}
+.console {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: 300px;
+  padding: 10px 15px;
+  font-size: 13px;
+  width:100%;
+}
+
