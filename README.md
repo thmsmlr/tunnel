@@ -10,6 +10,12 @@ So Chrome extensions are an interesting beast. At any given point you have to de
 
 Okay so lets say you're writing a Chrome extension that modifies the DOM on a dynamic single page app where the layout is controlled by javascript - a backbone app. Injecting HTML into the DOM from your content script is going to be problematic since your changes can be overwritten by the backbone app at any point. Tunnel would allow you to inject a notifier into the web page context and trigger a callback in the content script context on a backbone render event.
 
+## Installation
+
+```
+  $ bower install tunnel
+```
+
 ## Usage
 
 To add Tunnel to your Chrome extension, simply add `tunnel.js` to your `manifest.js`:
