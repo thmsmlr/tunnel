@@ -61,6 +61,8 @@
         });
       }
     }
+
+    window.onTunnelLoad && window.onTunnelLoad();
   }
 
   injectTunneller();

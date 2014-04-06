@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "content_scripts": [ {
     "js": [ "tunnel.js", "demo.js" ],
-    "matches": [ "*://*.google.com/*" ],
+    "matches": [ "*://localhost/*", "*://thmsmlr.com/tunnel/" ],
     "run_at": "document_end"
   } ],
   "description": "A demo chrome extension demonstrating tunneling between the page context and the content script context.",
