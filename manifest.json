@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "content_scripts": [ {
+    "js": [ "tunnel.js", "demo.js" ],
+    "matches": [ "*://*.google.com/*" ],
+    "run_at": "document_end"
+  } ],
+  "description": "A demo chrome extension demonstrating tunneling between the page context and the content script context.",
+  "name": "Tunnel Demo Extension",
+  "permissions": [],
+  "version": "0.0.1"
+}
